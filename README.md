@@ -1,60 +1,101 @@
-# K-NN Predictor
+# SkillLoop 🎓
 
-from sklearn.datasets import load_iris
+**SkillLoop** is a digital skills learning platform designed to help beginners build useful skills and prepare for job opportunities.
 
-from sklearn.model_selection import train_test_split
+🌐 **Live Website:** https://skill-i-henna.vercel.app/
 
-from sklearn.neighbors import KNeighborsClassifier
+## 📌 About the Project
 
-from sklearn.metrics import accuracy_score
+SkillLoop provides a simple learning platform where users can:
 
-data = load_iris()
+* Explore different skill courses
+* Learn through structured modules
+* Register as a learner
+* Complete assessments
+* Get certificates
+* Explore job and placement opportunities
 
-x = data.data
+The project is designed with a clean and beginner-friendly interface.
 
-y = data.target
+## ✨ Features
 
-x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 42)
+* 🎓 Digital skill learning
+* 📚 Course and learning modules
+* 📝 Learner registration
+* 🏆 Course certification
+* 💼 Job and placement support
+* 📱 Responsive design
+* 🎨 Clean and modern user interface
 
-k = 5
+## 🛠️ Technologies Used
 
-model = KNeighborsClassifier(n_neighbors = k)
+* HTML
+* CSS
+* JavaScript
+* Python
+* Vercel
 
-model.fit(x_train, y_train)
+## 📂 Project Structure
 
-print("--- K-NN MODEL TRAINED SUCCESSFULLY-----")
+```text
+Skill-i/
+│
+├── public/
+├── src/
+├── package.json
+├── vite.config.js
+├── index.html
+└── README.md
+```
 
-print(f"value of k used: {k}")
+> The exact files and folders may change as the project is developed.
 
-y_pred = model.predict(x_test)
+## 🚀 How to Run the Project
 
-print("\nActual Labels:", y_test)
+### 1. Clone the repository
 
-print("Predicted Labels:", y_pred)
+```bash
+git clone https://github.com/hamaad-messi/Skill-i.git
+```
 
-accuracy = accuracy_score(y_test, y_pred)
+### 2. Open the project
 
-print(f"\nAccuracy: {accuracy * 100:.2f}%")
+```bash
+cd Skill-i
+```
 
-This project was built with [Lovable](https://lovable.dev).
+### 3. Install dependencies
 
-**Live app**: https://kute-knn-keeper.lovable.app
+```bash
+npm install
+```
 
-## Build with Lovable
+### 4. Start the development server
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/17d63cf8-01b9-47b9-bd51-faa84edd326d).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+The project will then be available on the local development URL shown in your terminal.
+
+## 🌐 Deployment
+
+This project is deployed using **Vercel**.
+
+### Live Demo
+
+👉 https://skill-i-henna.vercel.app/
+
+## 🎯 Project Goal
+
+The main goal of SkillLoop is to provide a simple platform where people can improve their digital skills, complete learning programs, receive certification, and find opportunities to start their careers.
+
+## 👨‍💻 Developer
+
+**Hamaad Messi**
+
+GitHub: https://github.com/hamaad-messi
+
+## 📄 License
+
+This project is created for educational and development purposes.
