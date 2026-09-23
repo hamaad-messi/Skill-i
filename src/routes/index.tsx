@@ -95,7 +95,7 @@ function Landing() {
               </Link>
             </div>
             <ul className="mt-10 grid gap-2.5 text-sm text-ink sm:grid-cols-2">
-              {["No tuition fee for eligible applicants", "Assessed certification, not attendance", "Employer-reviewed curriculum", "Placement support for twelve months"].map((item) => (
+              {["Low tuition fee for eligible applicants", "Assessed certification, not attendance", "Employer-reviewed curriculum", "Placement support for twelve months"].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" strokeWidth={1.8} />
                   {item}
